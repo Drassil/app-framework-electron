@@ -1,0 +1,33 @@
+{
+  "devDependencies": {
+    "electron": "^1.4.3",
+    "electron-builder": "^7.14.1",
+    "electron-packager": "^8.1.0"
+  },
+  "build": {
+    "appId": "your.app",
+    "productName": "YourApp",
+    "app-category-type": "public.app-category.games",
+    "mac": {
+      "category": "public.app-category.games",
+      "target": ".dmg"
+    },
+    "win": {
+      "category": "public.app-category.games"
+    },
+    "linux": {
+      "category": "public.app-category.games"
+    }
+  },
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "dist": "build -w --x64"
+  },
+  "dependencies": {
+    "electron-settings": "^2.2.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "md5-file": "^3.1.1"
+  }
+}
