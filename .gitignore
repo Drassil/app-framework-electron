@@ -40,8 +40,9 @@ patches-*
 /.settings/
 /.externalToolBuilders/*
 # exclude in all levels
-nbproject/
+nbproject/private/
 *.ffs_db
+*.ffs_gui
 
 #
 # Eclipse
@@ -75,5 +76,13 @@ local.properties
 
 # App
 
-/node_modules/
+node_modules/
+npm-debug.log
+app/*/*
+!app/.gitignore
+!app/package.json.dist
+!app/main.js
+!app/renderer.js
+!app/index.html
+!app/app-framework
 

@@ -1,0 +1,1 @@
+appFramework = AppFramework.init();
